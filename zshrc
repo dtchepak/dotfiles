@@ -50,7 +50,7 @@ plugins=(git cabal brew chruby bundler)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=~/.cabal/bin:~/dev/ghc/bin:~/dev/scala-2.10.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=~/.cabal/bin:~/dev/ghc/bin:~/dev/scala-2.10.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/dtchepak/dev/elm/Elm-Platform/0.15.1/.cabal-sandbox/bin
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
