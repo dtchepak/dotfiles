@@ -45,7 +45,7 @@ ZSH_THEME="dtchepak"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git cabal brew chruby bundler)
+plugins=(git cabal stack brew chruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,3 +79,4 @@ export PATH=~/.cabal/bin:~/dev/ghc/bin:~/dev/scala-2.10.2/bin:/usr/local/bin:/us
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
