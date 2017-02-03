@@ -50,7 +50,15 @@ plugins=(git cabal stack brew chruby bundler)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=~/.cabal/bin:~/dev/ghc/bin:~/dev/scala-2.10.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/dtchepak/dev/elm/Elm-Platform/0.15.1/.cabal-sandbox/bin
+export PATH=~/.cabal/bin:~/dev/ghc/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
+# Go config
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$GOPATH/bin
+
+# dotnetcore
+export PATH=$PATH:/usr/local/share/dotnet/
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
