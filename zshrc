@@ -88,3 +88,4 @@ export PATH=$PATH:/usr/local/share/dotnet/
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval $(/usr/libexec/path_helper -s)
