@@ -14,16 +14,18 @@
 	excludesfile = /Users/dtchepak/.gitignore_global
 	autocrlf = input
 	safecrlf = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[auto]
-	crlf = =
 [init]
 	templatedir = ~/.git-templates
 [merge]
+	tool = kdiff3
 	log = true
 	summary = true
+	keepBackup = false
+[diff]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = kdiff3
+	trustExitCode = false
+	keepBackup = false
+[mergetool]
+	keepBackup = false
