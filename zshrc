@@ -52,11 +52,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH=~/.cabal/bin:~/dev/ghc/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
-# Go config
-export GOPATH=$HOME/dev/go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export PATH=$PATH:$GOPATH/bin
-
 # dotnetcore
 export PATH=$PATH:/usr/local/share/dotnet/
 
@@ -89,3 +84,4 @@ export PATH=$PATH:/usr/local/share/dotnet/
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval $(/usr/libexec/path_helper -s)
+
