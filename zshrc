@@ -49,12 +49,9 @@ plugins=(git cabal stack brew chruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-export PATH=~/.cabal/bin:~/dev/ghc/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-
-# dotnetcore
-export PATH=$PATH:/usr/local/share/dotnet/
-
+# ==================
+# PATH set in zshenv
+# ==================
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
