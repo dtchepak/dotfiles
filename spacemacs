@@ -313,6 +313,17 @@ you should place your code here."
   (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
   (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
   ;; Whitespace settings: https://www.reddit.com/r/emacs/comments/2keh6u/show_tabs_and_trailing_whitespaces_only/cll0l03/
+  (require 'whitespace)
+  (setq whitespace-style '(face
+                           trailing
+                           spaces
+                           tabs
+                           newline
+                           empty
+                           space-mark
+                           tab-mark
+                           newline-mark
+                           ))
   (setq whitespace-display-mappings
         '(
           (space-mark 32 [183] [46]) ; 32 SPACE, 183 MIDDLE DOT 「·」, 46 FULL STOP 「.」
