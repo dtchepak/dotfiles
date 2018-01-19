@@ -323,6 +323,8 @@ you should place your code here."
                       :foreground "#353535")
   (set-face-attribute 'whitespace-newline nil
                       :foreground "#353535")
+  (set-face-attribute 'whitespace-tab nil
+                      :foreground "#353535")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
