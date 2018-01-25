@@ -53,6 +53,11 @@ source $ZSH/oh-my-zsh.sh
 # PATH set in zshenv
 # ==================
 
+# LESS:
+#   -R : enable colours
+#   -X : do not reset the screen after exit
+export LESS=-RX
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
