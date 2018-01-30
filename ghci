@@ -1,0 +1,12 @@
+:set -Wall
+:set -fno-warn-type-defaults
+-- :set prompt "ghci> "
+
+-- Prompt from https://coderwall.com/p/13h9bw/colored-ghci-prompt-with-and-modules-on-separate-lines
+:set prompt "\ESC[1;34m\STX%s\n\ESC[0;34m\STXλ> \ESC[m\STX"
+
+-- Configure :pf to call pointfree command line tool
+:def pf \str -> return $ ":! pointfree \"" ++ str ++ "\""
+ 
+-- Hoogle
+:def hoogle \str -> return $ ":! hoogle --count=15 \"" ++ str ++ "\""
