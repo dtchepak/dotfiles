@@ -56,7 +56,8 @@ source $ZSH/oh-my-zsh.sh
 # LESS:
 #   -R : enable colours
 #   -X : do not reset the screen after exit
-export LESS=-RX
+#   -F : exit immediately if the text fits on a single screen
+export LESS=-RXF
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
