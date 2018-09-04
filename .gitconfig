@@ -23,6 +23,7 @@
 	keepBackup = false
 [diff]
 	tool = kdiff3
+	submodule = log
 [mergetool "kdiff3"]
 	path = kdiff3
 	trustExitCode = false
