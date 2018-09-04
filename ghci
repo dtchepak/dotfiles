@@ -1,5 +1,6 @@
 :set -Wall
 :set -fno-warn-type-defaults
+:set -fno-warn-unused-imports
 -- :set prompt "ghci> "
 
 -- Prompt from https://coderwall.com/p/13h9bw/colored-ghci-prompt-with-and-modules-on-separate-lines
