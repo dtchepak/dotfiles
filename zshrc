@@ -45,7 +45,7 @@ ZSH_THEME="dtchepak"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git cabal stack brew chruby bundler)
+plugins=(git cabal chruby bundler gradle grunt yarn docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,3 +88,5 @@ export LESS=-RXF
 
 eval $(/usr/libexec/path_helper -s)
 
+# Nix config:
+. ~/.nix-profile/etc/profile.d/nix.sh
