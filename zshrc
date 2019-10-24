@@ -88,5 +88,13 @@ export LESS=-RXF
 
 eval $(/usr/libexec/path_helper -s)
 
-# Nix config:
-. ~/.nix-profile/etc/profile.d/nix.sh
+# dotnet config (from https://docs.microsoft.com/en-us/dotnet/core/tools/enable-tab-autocomplete):
+# zsh parameter completion for the dotnet CLI
+_dotnet_zsh_complete() 
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
