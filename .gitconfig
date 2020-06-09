@@ -8,6 +8,8 @@
 	lg = log --oneline --decorate --graph --all
     # From https://stackoverflow.com/a/4408378/906:
 	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+    # From https://preslav.me/2020/03/01/use-the-git-history/
+    code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 [color]
 	branch = auto
 	diff = auto
@@ -32,3 +34,5 @@
 	keepBackup = false
 [mergetool]
 	keepBackup = false
+[pull]
+	ff = only
