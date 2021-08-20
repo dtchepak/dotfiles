@@ -10,6 +10,9 @@
 	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
     # From https://preslav.me/2020/03/01/use-the-git-history/
     code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
+    # List branches when tracked remote branch has been removed.
+    # Pipe to "xargs git branch -D" to remove these.
+    list-gone = "!git branch -vv | grep gone | awk '{print $1}'"
 [color]
 	branch = auto
 	diff = auto
