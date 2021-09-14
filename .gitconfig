@@ -12,7 +12,7 @@
     code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
     # List branches when tracked remote branch has been removed.
     # Pipe to "xargs git branch -D" to remove these.
-    list-gone = "!git branch -vv | grep gone | awk '{print $1}'"
+    list-gone = "!git branch -vv | grep ': gone]' | awk '{print $1}'"
 [color]
 	branch = auto
 	diff = auto
