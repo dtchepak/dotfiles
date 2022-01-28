@@ -23,6 +23,7 @@
 	safecrlf = true
 [init]
 	templatedir = ~/.git-templates
+	defaultBranch = main
 [merge]
 	tool = kdiff3
 	log = true
