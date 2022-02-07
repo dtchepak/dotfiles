@@ -10,3 +10,5 @@ ln -s ~/dev/git/dotfiles/.gitignore_global .gitignore_global
 ln -s ~/dev/git/vimfiles/ .vim
 # Requires SSH
 ln -s ~/SSH .ssh 
+# Requires oh-my-zsh
+ln -s ~/dev/git/dotfiles/dtchepak.zsh-theme .oh-my-zsh/themes/dtchepak.zsh-theme
