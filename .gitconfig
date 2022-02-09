@@ -21,6 +21,7 @@
 	excludesfile = /Users/dtchepak/.gitignore_global
 	autocrlf = input
 	safecrlf = true
+	editor = vim
 [init]
 	templatedir = ~/.git-templates
 	defaultBranch = main
