@@ -3,4 +3,5 @@
 export PATH=~/.local/bin:~/.ghcup/bin:~/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 # dotnetcore
-export PATH=$PATH:/usr/local/share/dotnet/
+export PATH=$PATH:/usr/local/share/dotnet/:$HOME/.dotnet/
+export DOTNET_ROOT=$HOME/.dotnet
