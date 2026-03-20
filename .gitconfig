@@ -17,6 +17,8 @@
     recent-branch = branch --sort=-committerdate
     # Fetch and prune
     fetch-nuke = fetch --prune --prune-tags
+	# Log as markdown for MR/PR
+	log-md = log --pretty=format:'%x23%x23%x23 %s%n%n%b'
 [color]
 	branch = auto
 	diff = auto
